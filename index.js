@@ -1,0 +1,5 @@
+import React, { Fragment } from "react";
+import ReactDOM from "react-dom";
+import App1 from "./components/App1";
+
+ReactDOM.render(<App1 />, document.querySelector("#root"));
