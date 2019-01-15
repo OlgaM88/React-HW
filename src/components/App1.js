@@ -6,9 +6,9 @@ import UserMenu from "./UserMenu";
 import HeaderMenu from "./HeaderMenu";
 import DropDownMenu from "./DropDownMenu";
 import Authentication from "./Authentication";
-import menu from "../JSON/menu.json";
+
 import orderHistory from "../JSON/order-history.json";
-import MenuList from "./MenuList";
+
 import OrderHistory from "./OrderHistory";
 
 const INITIAL_STATE = {
