@@ -3,6 +3,7 @@ import OrderData from "./OrderData";
 
 const OrderHistory = ({ orders }) => (
   <table className="order-list">
+    <caption className="order-list-caption">Order History</caption>
     <thead>
       <tr>
         <th>Date</th>
