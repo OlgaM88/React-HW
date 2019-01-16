@@ -1,5 +1,4 @@
 import React from "react";
-import AddComment from "./AddComment";
 
 const MenuItem = ({ id, imageUrl, name, price, width = 200, height = 200 }) => (
   <div className="menu__item">

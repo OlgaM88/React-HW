@@ -8,12 +8,10 @@ import DropDownMenu from "./DropDownMenu";
 import Authentication from "./Authentication";
 import MenuList from "./MenuList";
 import FilterForm from "./FilterForm";
-import AddComment from "./AddComment";
+import OrderHistory from "./OrderHistory";
 
 import orderHistory from "../JSON/order-history.json";
 import menu from "../JSON/menu.json";
-
-import OrderHistory from "./OrderHistory";
 
 const INITIAL_STATE = {
   title: "Burger Food"
@@ -59,12 +57,6 @@ export default class App extends Component {
       { label: "Home", link: "#home" },
       { label: "Contact", link: "#contact" },
       { label: "Delivery", link: "#delivery" }
-    ];
-
-    let userMenuSettings = [
-      { label: "Account", link: "#account" },
-      { label: "Order History", link: "#order" },
-      { label: "Meal Planer", link: "#meal" }
     ];
 
     return (
