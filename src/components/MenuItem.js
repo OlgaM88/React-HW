@@ -1,7 +1,7 @@
 import React from "react";
 
 const MenuItem = ({ id, imageUrl, name, price, width = 200, height = 200 }) => (
-  <div className="menu__item">
+  <div className="menu__item_product">
     <img
       className="image"
       src={imageUrl}

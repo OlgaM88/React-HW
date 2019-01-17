@@ -1,8 +1,8 @@
 import React from "react";
 
-const OrderData = ({ date, price, delivery, rating }) => {
+const OrderData = ({ id, date, price, delivery, rating }) => {
   return (
-    <tr>
+    <tr key={id}>
       <td>{date}</td>
       <td>{price}</td>
       <td>{delivery}</td>

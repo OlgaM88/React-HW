@@ -21,10 +21,13 @@ export default class App extends Component {
   state = {
     ...INITIAL_STATE,
     filter: "",
-    items: [...menu],
-    message: "Please leave a comment..."
+    items: [...menu]
   };
 
+  handleSubmitForm = e => {
+    e.preventDefault();
+    console.log(e.target.value);
+  };
   onChange = ({ target }) => {
     const { name, value } = target;
     this.setState({
@@ -35,12 +38,6 @@ export default class App extends Component {
     this.getFilteredItems(filter);
   };
 
-  handleMessageChange = e => {
-    this.setState({
-      message: e.target.value
-    });
-  };
-
   getFilteredItems = filter => {
     const { items } = this.state;
     let newItems = items.filter(item =>
@@ -49,7 +46,7 @@ export default class App extends Component {
     this.setState({ items: newItems });
   };
   render() {
-    const { title, items, filter, message } = this.state;
+    const { title, items, filter } = this.state;
 
     let links = [
       { label: "Menu", link: "#menu" },
@@ -70,7 +67,7 @@ export default class App extends Component {
         </Header>
         <OrderHistory orders={orderHistory} />
         <FilterForm value={filter} onChange={this.onChange} />
-        <MenuList products={items} message={message} onChange={this.onChange} />
+        <MenuList products={items} />
       </div>
     );
   }

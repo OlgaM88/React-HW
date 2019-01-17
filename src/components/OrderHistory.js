@@ -17,6 +17,7 @@ const OrderHistory = ({ orders }) => (
       {orders.map(order => {
         return (
           <OrderData
+            id={order.id}
             data={order.data}
             price={order.price}
             delivery={order.address}

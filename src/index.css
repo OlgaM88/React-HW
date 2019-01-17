@@ -30,6 +30,14 @@ code {
   width: 100%;
   align-items: center;
 }
+.header-menu__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 100%;
+  align-items: center;
+}
 .order-list-caption {
   text-transform: uppercase;
   font-weight: bold;
@@ -41,13 +49,10 @@ code {
   justify-content: space-between;
   list-style: none;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
 }
 .menu__item {
-  width: 250px;
-
-  min-heigth: 200px;
   margin-bottom: 50px;
 }
 .name,
@@ -59,4 +64,27 @@ code {
 }
 .select-grade {
   margin-bottom: 10px;
+}
+.comments {
+  width: 220px;
+}
+.comments-save-form {
+  display: flex;
+  flex-direction: column;
+}
+.menu__list-item {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+.menu__item_product {
+  width: 210px;
+}
+.save-message-btn {
+  width: 50px;
+  margin-top: 5px;
+  margin-left: 80px;
 }
