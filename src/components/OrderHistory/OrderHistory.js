@@ -1,15 +1,16 @@
 import React from "react";
 import OrderData from "./OrderData";
 
+let orderColumns = ["Data", "Price", "Delivery", "Rating"];
+
 const OrderHistory = ({ orders }) => (
   <table className="order-list">
     <caption className="order-list-caption">Order History</caption>
     <thead>
       <tr>
-        <th>Date</th>
-        <th>Price</th>
-        <th>Delivery</th>
-        <th>Rating</th>
+        {orderColumns.map(column => {
+          return <th>{column}</th>;
+        })}
       </tr>
     </thead>
 

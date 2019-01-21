@@ -16,11 +16,20 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  min-height: 120px;
+  min-height: 200px;
+  padding-left: 20px;
 }
 .Logo {
   display: flex;
   align-items: center;
+}
+.logo-img {
+  width: 60px;
+  height: 60px;
+}
+.user-image {
+  width: 60px;
+  height: 60px;
 }
 .menu__list {
   display: flex;

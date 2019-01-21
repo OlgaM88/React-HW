@@ -4,18 +4,17 @@ import SignUp from "./SignUp";
 
 export default class Authentication extends Component {
   state = {
-    isSignIn: false,
-    isSignUp: false
+    isSignIn: false
   };
 
   openSignInForm() {
-    this.setState({ isSignIn: true, isSignUp: false });
+    this.setState({ isSignIn: true });
   }
   openSignUpForm() {
-    this.setState({ isSignIn: false, isSignUp: true });
+    this.setState({ isSignIn: false });
   }
   render() {
-    const { isSignIn, isSignUp } = this.state;
+    const { isSignIn } = this.state;
     return (
       <div className="wrapper">
         <div className="form-controller">
@@ -33,8 +32,7 @@ export default class Authentication extends Component {
           </button>
         </div>
         <div className="form-container" />
-        {isSignIn && <SignIn />}
-        {isSignUp && <SignUp />}
+        {isSignIn ? <SignIn /> : <SignUp />}
       </div>
     );
   }
