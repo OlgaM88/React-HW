@@ -1,9 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 const INITIAL_STATE = {
-  message: "",
-  grade: ""
+  message: '',
+  grade: '',
 };
+
+const optionsGrade = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
 
 export default class AddComment extends Component {
   state = { ...INITIAL_STATE };
@@ -22,24 +24,19 @@ export default class AddComment extends Component {
       <div className="comments">
         <h4> Comments and ratings to the recipe</h4>
         <form className="comments-save-form">
-          <label>
+          <label htmlFor="grade">
             Choose a grade
             <select
               className="select-grade"
               name="grade"
               value={grade}
-              onChange={this.handleChange}
+              onBlur={this.handleChange}
             >
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
+              {optionsGrade.map(option => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
             </select>
           </label>
           <textarea

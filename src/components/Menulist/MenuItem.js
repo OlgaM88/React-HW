@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const MenuItem = ({ id, imageUrl, name, price, width = 200, height = 200 }) => (
   <div className="menu__item_product">

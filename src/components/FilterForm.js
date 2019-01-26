@@ -1,16 +1,17 @@
-import React from "react";
+import React from 'react';
 
-const FilterForm = ({ filter, onChange }) => (
+const FilterForm = ({ value = '', onChange }) => (
   <div>
-    <label htmlFor="filter">Filter by Product Name: </label>
-    <input
-      type="text"
-      id="filter"
-      name="filter"
-      value={filter}
-      onChange={onChange}
-      autoFocus
-    />
+    <label htmlFor="filter">
+      Filter by Product Name:{' '}
+      <input
+        type="text"
+        id="filter"
+        name="filter"
+        value={value}
+        onChange={onChange}
+      />
+    </label>
   </div>
 );
 

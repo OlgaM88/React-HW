@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const HeaderMenu = ({ links }) => (
   <ul className="header-menu__list">

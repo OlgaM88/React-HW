@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Logo = ({ imageUrl, alt }) => (
   <a href="/" className="Logo">

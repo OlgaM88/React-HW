@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const DropDownMenuList = ({ items }) => (
   <ul className="dd-menu__list">
