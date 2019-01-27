@@ -1,8 +1,9 @@
 import React from 'react';
+import logo from '../../burger.svg';
 
-const Logo = ({ imageUrl, alt }) => (
+const Logo = () => (
   <a href="/" className="Logo">
-    <img src={imageUrl} className="logo-img" alt={alt} />
+    <img src={logo} className="logo-img" alt="Burger Food" />
     <h1>Burger Food</h1>
   </a>
 );

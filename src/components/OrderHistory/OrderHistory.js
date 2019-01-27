@@ -7,7 +7,11 @@ const OrderHistory = ({ orders }) => (
   <table className="order-list">
     <caption className="order-list-caption">Order History</caption>
     <thead>
-      <tr>{orderColumns.map(column => `<th>{column}</th>`)}</tr>
+      <tr>
+        {orderColumns.map(column => (
+          <th key={column}>{column}</th>
+        ))}
+      </tr>
     </thead>
 
     <tbody>
